@@ -1,0 +1,15 @@
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\bin\Debug\net7.0\Exercise4.exe
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\bin\Debug\net7.0\Exercise4.deps.json
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\bin\Debug\net7.0\Exercise4.runtimeconfig.json
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\bin\Debug\net7.0\Exercise4.dll
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\bin\Debug\net7.0\Exercise4.pdb
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.csproj.AssemblyReference.cache
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.GeneratedMSBuildEditorConfig.editorconfig
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.AssemblyInfoInputs.cache
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.AssemblyInfo.cs
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.csproj.CoreCompileInputs.cache
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.dll
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\refint\Exercise4.dll
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.pdb
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\Exercise4.genruntimeconfig.cache
+D:\TeachMeSkills\TeachMeSkills-HW\Lesson3\Exercise4\Exercise4\obj\Debug\net7.0\ref\Exercise4.dll
