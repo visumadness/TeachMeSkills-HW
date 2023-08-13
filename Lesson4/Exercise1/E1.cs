@@ -14,22 +14,23 @@ Console.WriteLine(" ");//indent from the task
 
 exerciseNumber("1.2");
 Console.WriteLine("Arithmetic mean of all elements of jagged array"+"\n");
-Console.Write("Random :");
+Console.Write("Random :" + "\t");
 Random random = new Random();
 
-int[][] arrayZub = new int[5][];
+int[][] arrayZub = new int[3][];
+arrayZub[0] = new int[4];
+arrayZub[1] = new int[5];
+arrayZub[2] = new int[3];
 int sum = 0;
 double average;
 int m = 0;
 
 for (int i = 0; i < arrayZub.Length; i++)
 {
-    arrayZub[i] = new int[i + 1];
-
-    for (int j = 0; j < i + 1; j++)
+    for (int j = 0; j < arrayZub[i].Length; j++)
     {
         m++;
-        arrayZub[i][j] = random.Next(5, 15);
+        arrayZub[i][j] = random.Next(20);
         sum += arrayZub[i][j];
         Console.Write("{0} ", arrayZub[i][j]);
     }
