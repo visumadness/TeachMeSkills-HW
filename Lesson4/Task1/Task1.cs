@@ -4,7 +4,7 @@ if (FindMaxValue(arrayForTest) == expectedMax)
 {
     Console.WriteLine($"{nameof(FindMaxValue)} method works correctly");
 }
-///////////////////////////////////////////////////////////////
+
 
 var zubArrayForTests = new int[][] {
     new int[] { 16, 24, 0, 9 },
@@ -63,30 +63,30 @@ static double CalculteAverageValue(int[][] array)
     return sum / totalLength;
 }
 
-static int[] GenerateFibonacciSequence(int FibonacciSequence)
+static int[] GenerateFibonacciSequence(int fibonacciSequence)
 {
     const int fibonacciFirst = 0;
     const int fibonacciSecond = 1;
 
-    if (FibonacciSequence < 0)
+    if (fibonacciSequence < 0)
     {
-        throw new ArgumentException($"Parameter \"{nameof(FibonacciSequence)}\" must be 0 or greater.");
+        throw new ArgumentException($"Parameter \"{nameof(fibonacciSequence)}\" must be 0 or greater.");
     }
 
-    if (FibonacciSequence == 0)
+    if (fibonacciSequence == 0)
     {
         return Array.Empty<int>();
     }
 
-    if (FibonacciSequence == 1)
+    if (fibonacciSequence == 1)
     {
         return new int[] { fibonacciFirst };
     }
 
-    var fibonacciNums = new int[FibonacciSequence];
+    var fibonacciNums = new int[fibonacciSequence];
     fibonacciNums[0] = fibonacciFirst;
     fibonacciNums[1] = fibonacciSecond;
-    for (var i = 2; i < FibonacciSequence; i++)
+    for (var i = 2; i < fibonacciSequence; i++)
     {
         fibonacciNums[i] = fibonacciNums[i - 1] + fibonacciNums[i - 2];
     }
