@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace InstagramEmulator
 {
-    public class Post
+    class Post
     {
         public string Caption { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime Date { get; set; }
+        public User User { get; set; }
 
-        public Post(string caption, DateTime createdAt)
+        public Post(string caption, DateTime date, User user)
         {
             Caption = caption;
-            CreatedAt = createdAt;
+            Date = date;
+            User = user;
         }
     }
 }

@@ -6,54 +6,74 @@ using System.Threading.Tasks;
 
 namespace InstagramEmulator
 {
-    public class User
+    class User
     {
-        private List<Post> myPosts;
-        private List<Post> postsToSee;
         private int myPostsLimit;
         private int postsToSeeLimit;
-
-        public event Action<Post> NewPostAdded;
+        private List<User> followers = new List<User>(); // список подписчиков
+        private List<Post> myPosts = new List<Post>(); // список собственных постов
+        private List<Post> postsToSee = new List<Post>(); // список постов подписок
 
         public User(int myPostsLimit, int postsToSeeLimit)
         {
             this.myPostsLimit = myPostsLimit;
             this.postsToSeeLimit = postsToSeeLimit;
-            myPosts = new List<Post>();
-            postsToSee = new List<Post>(); 
+        }
+
+        public string Name { get; set; }
+
+        public void AddFollower(User follower)
+        {
+            followers.Add(follower);
         }
 
         public void AddPost(Post post)
         {
-            if(myPosts.Count >= myPostsLimit)
-            {
-                Console.WriteLine("Your own post limit has been exceeded. The post will be ignored.");
-                return;
+            if (myPosts.Count >= myPostsLimit)
+            { 
+                Console.WriteLine($"Error: Can't add post '{post.Caption}' from user '{Name}'. Exceeded my posts limit");
             }
+            else
+            {
+                myPosts.Add(post); // добавляем пост в свой список постов
+                Console.WriteLine($"New post '{post.Caption}' added by '{Name}'");
 
-            postsToSee.Add(post);
-            NewPostAdded?.Invoke(post);
+                // уведомляем всех подписчиков о новом посте
+                foreach (User follower in followers)
+                {
+                    follower.OnNewPostAdded(post);
+                }
+            }
         }
 
-        private void AddToPostsToSee(Post post)
+        // метод вызывается, когда пользователь получает уведомление о новом посте от другого пользователя
+        public void OnNewPostAdded(Post post)
         {
             if (postsToSee.Count >= postsToSeeLimit)
+            { // проверяем лимит на количество постов для просмотра
+                Console.WriteLine($"Can't add post '{post.Caption}' from user '{Name}' to posts to see list of user '{this.Name}'. Exceeded posts to see limit");
+            }
+            else
             {
-                Console.WriteLine("The limit of posts for viewing has been exceeded. The post will be ignored.");
-                return;
+                postsToSee.Add(post); // добавляем пост в список постов для просмотра
+                Console.WriteLine($"New post '{post.Caption}' added to posts to see list of user '{Name}'");
+            }
+        }
+
+        // метод для вывода списка своих постов и постов подписок
+        public void PrintPosts()
+        {
+            Console.WriteLine($"My posts ({myPosts.Count}):");
+            foreach (Post post in myPosts)
+            {
+                Console.WriteLine($"{post.Caption} ({post.Date.ToString()})");
             }
 
-            postsToSee.Add(post);
-        }
-
-        public void Subscribe(User user)
-        {
-            user.NewPostAdded += AddToPostsToSee;
-        }
-
-        public void Unsubscribe(User user)
-        {
-            user.NewPostAdded -= AddToPostsToSee;
+            Console.WriteLine($"Posts to see ({postsToSee.Count}):");
+            foreach (Post post in postsToSee)
+            {
+                Console.WriteLine($"{post.User.Name}: {post.Caption} ({post.Date.ToString()})");
+            }
         }
     }
 }
