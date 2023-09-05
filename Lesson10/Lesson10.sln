@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson8", "E1\Lesson8.csproj", "{E87BD2E4-46D7-4378-ADCB-3195B2359A80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstagramEmulator", "InstagramEmulator\InstagramEmulator.csproj", "{B9A04D0B-610D-4F6D-8A43-F2DD8C69A57E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E87BD2E4-46D7-4378-ADCB-3195B2359A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E87BD2E4-46D7-4378-ADCB-3195B2359A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E87BD2E4-46D7-4378-ADCB-3195B2359A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E87BD2E4-46D7-4378-ADCB-3195B2359A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A04D0B-610D-4F6D-8A43-F2DD8C69A57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A04D0B-610D-4F6D-8A43-F2DD8C69A57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A04D0B-610D-4F6D-8A43-F2DD8C69A57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A04D0B-610D-4F6D-8A43-F2DD8C69A57E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0ADCFA05-3C95-4E4D-8741-D03D56B4A2C2}
+		SolutionGuid = {76E57564-5243-43B8-A0E4-3E32BEA0423F}
 	EndGlobalSection
 EndGlobal
